@@ -20,7 +20,10 @@ body {
     box-shadow: 3px 3px 4px 2px #3b3b3b67;
     border-radius: 10px;
 }
-
+#deck {
+    display: flex;
+    gap: 20px;
+}
 h1, h2 {
     font-family: Chimpsdale;
 }
