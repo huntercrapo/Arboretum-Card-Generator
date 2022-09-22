@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Chimpsdale;
+    src: url('Chimpsdale\ Inline.ttf');
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px auto;
+    gap: 20px;
+}
+#card {
+    position: relative;
+    width: 240px;
+    height: 336px;
+    box-shadow: 3px 3px 4px 2px #3b3b3b67;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    font-family: Chimpsdale;
+}
+.values {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+#top-left {
+    position: absolute;
+    top: 100;
+    right: 10;
+}
+#top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    rotate: 180deg;
+}
+#bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    rotate: 180deg;
+}
+#species-display {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+#generate-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #6F3599;
+    border-radius: 25px;
+    color: white;
+    transition: all .3s ease 0s;
+}
+#generate-button:hover {
+    background-color: white;
+    color: #6F3599; 
+    transition: all .3s ease 0s;
+    border: 1px solid #6F3599;
+}
+#generate-button:active {
+    border: 3px solid white;
+    color: white;
+    background-color: #4d2569;
+    transition: all .1s ease 0s;
+}
+#species-name { 
+    font-size: 16px;
+}
+#species-image {
+    height: 280px;
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 10px;
+    z-index: -1;
+}
+.icon {
+    width: 30px;
+}
+#species-display img {
+    width: 20px;
+}
+#species-display {
+}
+#flourish-right {
+    transform: scale(-1, 1);
+}
